@@ -1,13 +1,28 @@
-@media all and (max-width: 30em) {
+/* HEADER */
+@media all and (max-width: 80em) {
     h1 {
         font-size: 4vw;
     }
     .media{
-        margin-top: 5%
+        margin-top: 5%;
+        padding: 0
     }
-    
+
     .media-container {
         width: 0.5em;
         height: 0.5em
+    }
+}
+
+@media all and (max-width:50em) {
+    .info-column {
+        float: none;
+        width: 100%;
+        text-align: center
+    }
+
+    .info__image {
+        display: block;
+        width: 100%
     }
 }
