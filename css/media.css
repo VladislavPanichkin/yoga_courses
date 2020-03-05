@@ -1,0 +1,13 @@
+@media all and (max-width: 30em) {
+    h1 {
+        font-size: 4vw;
+    }
+    .media{
+        margin-top: 5%
+    }
+    
+    .media-container {
+        width: 0.5em;
+        height: 0.5em
+    }
+}
