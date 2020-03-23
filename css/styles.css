@@ -15,8 +15,12 @@ header {
     color: white
 }
 
+h2 {
+    font-weight: 500
+}
+
 .container {
-    padding: 0 22%
+    padding: 0 22%;
 }
 
 .header {
@@ -193,4 +197,76 @@ h1 {
 
 .info-icons {
     margin-top: 10%
+}
+
+.title {
+    text-align: center;
+    padding: 7% 0;
+}
+
+.underline {
+    margin: 1% auto;
+    width: 15%;
+}
+
+.gallery-reasons {
+    text-align: center
+}
+
+.gallery-row {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 2%;
+}
+
+.gallery-row_1 {
+    justify-content: space-between
+}
+
+.gallery-row_2{
+    justify-content: space-evenly
+}
+
+.gallery__item {
+    width: 33%;
+}
+
+.gallery__description {
+    font-size: 1vw;
+    font-weight: 500;
+    white-space: nowrap
+}
+
+.gallery__img {
+    margin: auto
+}
+
+.gallery__description {
+    margin-top: 5%
+}
+
+/* FIRST SLIDER */
+
+.slider-section {
+    background: linear-gradient(to bottom,  #f8f2e4 0%, #f8f2e4 50%, #fff 50%); /* W3C */
+}
+
+.title-container {
+    background: #f8f2e4;
+}
+
+.slide_1 {
+    background-image: url('../img/expect-slide-1.png');
+}
+
+.slide_2 {
+    background-image: url('../img/expect-slide-2.png');
+}
+
+.slide_3 {
+    background-image: url('../img/expect-slide-3.png');
+}
+
+.slide {
+    display: none
 }
