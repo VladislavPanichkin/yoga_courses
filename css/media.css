@@ -81,7 +81,7 @@
     }
 
     .underline {
-        width: 50%
+        /* width: 50% */
     }
 
     .gallery-row {
@@ -96,5 +96,15 @@
 
     .gallery__description {
         font-size: 4vw
+    }
+}
+
+
+
+/* schedule */
+
+@media all and (max-width: 80em) {
+    .grid-container{
+        grid-template-columns: 45% 45%;
     }
 }

@@ -1,12 +1,10 @@
 @import '../fonts/stylesheet.css';
-@import './reset.css';
-/*@import './media.css'; */
 
 html { font-size: calc(1em + 1vw) }
 
 body{
     font-family: 'Muller';
-    margin: 0
+    margin: 0;
 }
 
 header {
@@ -21,6 +19,7 @@ h2 {
 
 .container {
     padding: 0 22%;
+    text-align: center
 }
 
 .header {
@@ -150,7 +149,8 @@ h1 {
     background: #f8f2e4;
     padding-top: 3%;
     padding-bottom: 3%;
-    overflow: auto
+    overflow: auto;
+    text-align: left
 }
 
 .info__image {
@@ -201,12 +201,12 @@ h1 {
 
 .title {
     text-align: center;
-    padding: 7% 0;
+    padding: 5% 0;
 }
 
 .underline {
     margin: 1% auto;
-    width: 15%;
+    width: 8vw;
 }
 
 .gallery-reasons {
@@ -247,26 +247,220 @@ h1 {
 
 /* FIRST SLIDER */
 
-.slider-section {
-    background: linear-gradient(to bottom,  #f8f2e4 0%, #f8f2e4 50%, #fff 50%); /* W3C */
+/* .slider-section {
+    background: linear-gradient(to bottom,  #f8f2e4 0%, #f8f2e4 50%, #fff 50%);
 }
 
 .title-container {
     background: #f8f2e4;
 }
 
-.slide_1 {
-    background-image: url('../img/expect-slide-1.png');
+.slider-block {
+    text-align: center;
+    position: relative
+}
+*/
+.slider-container {
+    display: flex;
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
-.slide_2 {
-    background-image: url('../img/expect-slide-2.png');
-}
-
-.slide_3 {
-    background-image: url('../img/expect-slide-3.png');
+.slick-center .slide__image {
+    filter: contrast(0.6)
 }
 
 .slide {
-    display: none
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    transition: 0.8s;
+    padding: 0 60px
+}
+
+.slide_image {
+    position: relative
+}
+
+.slide_description {
+    position: absolute;
+    top: 30%;
+    color: white;
+    transform: translateY(-50px);
+    visibility: hidden;
+    transition: 0.8s;
+    opacity: 0
+}
+
+.slide-title {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.slide-subtitle {
+    font-size: 0.65em;
+}
+
+.rectangle {
+    width: 6%;
+    height: 90%;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden
+}
+
+/* SLICK */
+
+.slick-track {
+    display: flex;
+    min-width: 0
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-center > .slide_description {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.slick-center > .rectangle {
+    opacity: 1;
+    visibility: visible
+}
+
+.slick-slide {
+    outline: none;
+}
+
+/* для img активного слайда 
+filter: contrast(0.6);
+*/
+
+/* schedule */
+
+.grid-block {
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.grid-item {
+    background: #fff8e6;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.grid-item-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: 10% 0
+}
+
+.grid-item-description {
+    font-weight: 300;
+    font-size: 0.3rem;
+    margin-bottom: 5%
+}
+
+.grid-item-name {
+    font-size: 0.8rem;
+    font-size: 0.4rem;
+    font-weight: 500;
+    margin-bottom: 5%
+}
+
+.grid-more-link {
+    font-size: 0.25rem;
+    margin-bottom: 7%;
+}
+
+.grid-more-link:hover {
+    text-decoration: none
+}
+
+.grid-button {
+    text-transform: uppercase;
+    font-size: 0.2rem;
+    font-weight: 600;
+    color: #e28234;
+    border: 1px solid #e28234;
+    background: transparent;
+    width: 85%;
+    height: 1rem;
+    transition: 0.3s
+}
+
+.grid-button:hover {
+    background: #e28234;
+    border: none;
+    color: white;
+    cursor: pointer
+}
+
+/* COURSE */
+
+.course-container {
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+.text-block {
+    margin-top: 2rem;
+    font-size: 0.6em;
+}
+
+.text-block__element {
+    margin-bottom: 1rem
+}
+
+.course {
+    padding: 0px 17%
+}
+
+.course__title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 9%
+}
+
+.course-items {
+    display: flex;
+    flex-flow: column;
+    text-align: left
+}
+
+.course__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%
+}
+
+.course__image {
+    float: left;
+    display: inline;
+    margin-right: 5%
+}
+
+.course__description {
+    font-size: 0.6rem
 }
