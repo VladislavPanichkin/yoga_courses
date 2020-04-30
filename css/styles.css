@@ -352,9 +352,6 @@ filter: contrast(0.6);
 
 /* schedule */
 
-.grid-block {
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -463,4 +460,38 @@ filter: contrast(0.6);
 
 .course__description {
     font-size: 0.6rem
+}
+
+/* GALLERY WITH GRID IMAGES */
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    grid-template-rows: 23% 23% 23% 23%;
+    column-gap: 2%;
+    row-gap: 2%;
+    float: left
+}
+
+.info-column {
+    text-align: left
+}
+
+.info__subtitle {
+    font-size: 0.4em;
+    font-weight: 300
+}
+
+.info-block {
+    font-size: 0.5em;
+    font-weight: 500
+}
+
+.features-block {
+    font-size: 0.3em
+}
+
+.features-block-item {
+    display: flex;
+    align-items: center
 }
