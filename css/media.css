@@ -108,3 +108,40 @@
         grid-template-columns: 45% 45%;
     }
 }
+
+/* slider */
+
+@media all and (max-width: 80em) {
+
+    .slide__image{
+        position: relative;
+        width: 35%
+    }
+
+    .slide__description {
+        padding: 10vw;
+        font-size: 0.9em;
+        position: absolute;
+        color: white
+    } 
+
+    .rectangle {
+        width: 85vw
+    }
+}
+
+/* center container */
+
+@media all and (max-width: 80em) {
+
+    .center-container {
+        display: flex;
+        flex-flow: column
+    }
+
+    /*.center-container::before {
+        content: '';
+        position: absolute;
+        width: 80%
+    } */
+}
