@@ -144,4 +144,13 @@
         position: absolute;
         width: 80%
     } */
+
+    .info-block__item {
+        font-size: 2em;
+        margin-bottom: 8%
+    }
+
+    .features-block {
+      display: none
+    }
 }

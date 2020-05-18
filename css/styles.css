@@ -285,18 +285,19 @@ h1 {
     padding: 0 60px
 }
 
-.slide_image {
+.slide__image {
     position: relative
 }
 
-.slide_description {
+.slide__description {
     position: absolute;
     top: 30%;
     color: white;
     transform: translateY(-50px);
     visibility: hidden;
     transition: 0.8s;
-    opacity: 0
+    opacity: 0;
+    z-index: 1
 }
 
 .slide-title {
@@ -332,7 +333,7 @@ h1 {
     overflow: hidden;
 }
 
-.slick-center > .slide_description {
+.slick-center > .slide__description {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
@@ -531,4 +532,53 @@ filter: contrast(0.6);
 
 .title_features {
     font-size: 0.8em
+}
+
+/* TUTORS BLOCK */
+
+.tutor-block {
+    display: flex;
+    flex-flow: column
+}
+
+.tutor__img {
+    width: 50vw;
+    position: relative
+}
+
+.tutor__img_1 {
+    background-image: url('../img/instructor-1.png')
+}
+
+.tutor__img_2 {
+    background-image: url('../img/instructor-2.png')
+}
+
+.tutor-description {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding: 1% 1%;
+    background-color: rgb(68, 68, 68, 0.5);
+}
+
+.tutor-title {
+    text-align: left;
+    display: inline-block;
+    float: left
+}
+
+.tutor__info {
+    font-size: 0.5em;
+    text-align: left;
+    float: right
+}
+
+.tutor__name {
+    font-weight: 500;
+    font-size: 1.2em
+}
+
+.tutor__specialization {
+    font-size: 0.7em
 }
