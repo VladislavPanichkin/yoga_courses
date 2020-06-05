@@ -248,19 +248,10 @@ h1 {
 
 /* FIRST SLIDER */
 
-/* .slider-section {
-    background: linear-gradient(to bottom,  #f8f2e4 0%, #f8f2e4 50%, #fff 50%);
+.slider-section {
+    background: #f8f2e4
 }
 
-.title-container {
-    background: #f8f2e4;
-}
-
-.slider-block {
-    text-align: center;
-    position: relative
-}
-*/
 .slider-container {
     display: flex;
     min-width: 0;
@@ -538,47 +529,78 @@ filter: contrast(0.6);
 
 .tutor-block {
     display: flex;
-    flex-flow: column
+    flex-flow: column;
+    position: relative;
+    margin-bottom: 1vh
 }
 
 .tutor__img {
-    width: 50vw;
     position: relative
 }
 
-.tutor__img_1 {
-    background-image: url('../img/instructor-1.png')
-}
-
-.tutor__img_2 {
-    background-image: url('../img/instructor-2.png')
-}
-
 .tutor-description {
-    position: absolute;
     color: white;
     bottom: 0;
     padding: 1% 1%;
     background-color: rgb(68, 68, 68, 0.5);
-}
-
-.tutor-title {
+    position: absolute;
+    display: flex;
+    padding: 5%;
+    align-items: center;
     text-align: left;
-    display: inline-block;
-    float: left
+    width: 100%;
+    justify-content: space-around
 }
 
 .tutor__info {
-    font-size: 0.5em;
+    font-size: 0.4em;
     text-align: left;
-    float: right
 }
 
 .tutor__name {
     font-weight: 500;
-    font-size: 1.2em
+    font-size: 0.8em;
+    margin-bottom: 5%
 }
 
 .tutor__specialization {
-    font-size: 0.7em
+    font-size: 0.4em;
+    font-weight: 300
+}
+
+.tutors-container {
+    width: 92%;
+    height: 100vh;
+    background: #f8f2e4
+}
+
+.tutor-title::after {
+    content: " ";
+    width: 4px;
+    height: 5px;
+    background-color: white;
+}
+
+.tutor__stripe {
+    width: 3px;
+    height: 4vw;
+    background-color: white
+}
+
+.dots {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    width: 6%
+}
+
+.dot {
+    color: white;
+    background: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 15%;
+    margin-right: 9%
 }

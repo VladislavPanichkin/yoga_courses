@@ -15,8 +15,7 @@ $(document).ready(function () {
                 breakpoint: 480,
                 settings: "unslick",
                 arrows: false,
-                dots: true,
-                slidestToShow: 3
+                slidestToShow: 1
             }
         ]
     })
