@@ -588,9 +588,9 @@ filter: contrast(0.6);
 }
 
 .dots {
-    display: flex;
     position: absolute;
-    bottom: 5%;
+    display: flex;
+    bottom: 12%;
     right: 1%;
     width: 6%
 }
@@ -603,4 +603,17 @@ filter: contrast(0.6);
     border-radius: 50%;
     margin-right: 15%;
     margin-right: 9%
+}
+
+.dot_active {
+    background: transparent;
+    color: none;
+    width: 7px;
+    height: 7px;
+    color: transparent;
+    border: 2px solid white
+}
+
+.slider-wrapper {
+    position: relative
 }

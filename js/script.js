@@ -18,5 +18,31 @@ $(document).ready(function () {
                 slidestToShow: 1
             }
         ]
+    });
+
+    let el = $("div.tutor-block, .slick-active")
+
+    $('.tutor-slider').slick({
+        arrows: true,
+        dots: false,
+        touchMove: true,
+        centerMode: true,
+        variableWidth: true,
+        slidesToShow: 1
+    });
+
+    function checkIndex() {
+        switch $()
+    } 
+    
+    ("el[data-slick-index='0']") {
+        console.log('success');
+        $(".dot_1").addClass("dot_active")
+    }
+
+    $('.tutor-slider').on('afterChange', function (slick, currentSlide) {
+        console.log('action');
+        $(".dot").removeClass("dot_active")
     })
+
 });
