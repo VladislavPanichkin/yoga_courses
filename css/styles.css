@@ -587,33 +587,56 @@ filter: contrast(0.6);
     background-color: white
 }
 
-.dots {
-    position: absolute;
-    display: flex;
-    bottom: 12%;
-    right: 1%;
-    width: 6%
-}
-
-.dot {
-    color: white;
-    background: white;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    margin-right: 15%;
-    margin-right: 9%
-}
-
-.dot_active {
-    background: transparent;
-    color: none;
-    width: 7px;
-    height: 7px;
-    color: transparent;
-    border: 2px solid white
-}
-
 .slider-wrapper {
     position: relative
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 2%;
+    right: 1%
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5  px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    content: '•';
+    font-size: 36px;
+    line-height: 17px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+}
+
+.slick-active button:before {
+    color: transparent!important;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 10px!important;
+    height: 10px!important
 }

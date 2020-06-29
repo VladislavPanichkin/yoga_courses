@@ -20,29 +20,17 @@ $(document).ready(function () {
         ]
     });
 
-    let el = $("div.tutor-block, .slick-active")
+    let el = $("div.tutor-block, .slick-active");
 
     $('.tutor-slider').slick({
-        arrows: true,
-        dots: false,
+        arrows: false,
+        dots: true,
         touchMove: true,
         centerMode: true,
         variableWidth: true,
         slidesToShow: 1
     });
 
-    function checkIndex() {
-        switch $()
-    } 
     
-    ("el[data-slick-index='0']") {
-        console.log('success');
-        $(".dot_1").addClass("dot_active")
-    }
-
-    $('.tutor-slider').on('afterChange', function (slick, currentSlide) {
-        console.log('action');
-        $(".dot").removeClass("dot_active")
-    })
 
 });
