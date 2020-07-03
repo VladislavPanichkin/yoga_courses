@@ -570,7 +570,7 @@ filter: contrast(0.6);
 
 .tutors-container {
     width: 92%;
-    height: 100vh;
+    height: 85vh;
     background: #f8f2e4
 }
 
@@ -604,6 +604,7 @@ filter: contrast(0.6);
     height: 16px;
     padding: 0;
     cursor: pointer;
+    margin-right: 2px;
 }
 
 .slick-dots li button {
@@ -639,4 +640,49 @@ filter: contrast(0.6);
     border-radius: 50%;
     width: 10px!important;
     height: 10px!important
+}
+
+.slick-active {
+    margin-right: 0!important;
+    margin-left: 5px
+}
+
+/* REVIEW */
+
+.review-section {
+    margin-top: 5%
+}
+
+.review {
+    display: flex
+}
+
+.review__img {
+    align-self: center;
+    width: 10vw;
+    margin-right: 5%;
+}
+
+.review-text {
+    text-align: left;
+    display: flex;
+    flex-flow: column
+}
+
+.review__name {
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin-bottom: 0.2em;
+}
+
+.review__link {
+    color: #c94410;
+    font-size: 0.5rem;
+    margin-bottom: 0.7em
+}
+
+.review__content {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.5rem;
 }

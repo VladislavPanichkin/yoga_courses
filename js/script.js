@@ -31,6 +31,13 @@ $(document).ready(function () {
         slidesToShow: 1
     });
 
-    
+    $('.reviews-block').slick({
+        arrows: false,
+        dots: true,
+        touchMove: true,
+        centerMode: true,
+        variableWidth: true,
+        slidesToShow: 1
+    })
 
 });
