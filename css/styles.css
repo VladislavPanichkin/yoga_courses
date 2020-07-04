@@ -650,11 +650,12 @@ filter: contrast(0.6);
 /* REVIEW */
 
 .review-section {
-    margin-top: 5%
+    margin-top: 17%
 }
 
 .review {
-    display: flex
+    display: flex;
+    flex-basis: 56vw
 }
 
 .review__img {

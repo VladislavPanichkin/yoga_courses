@@ -1,7 +1,7 @@
 /* HEADER */
 @media all and (max-width: 80em) {
     h1 {
-        font-size: 4vw;
+        font-size: 6vw;
     }
     .media{
         margin-top: 5%;
@@ -39,7 +39,12 @@
     }
 
     .header__img {
-        width: 15%
+        display: none
+    }
+
+
+    .header-wrapper {
+        margin: 11vh 0
     }
 
     .header-info__title {
@@ -47,11 +52,13 @@
     }
 
     .header-container {
+        display: flex;
+        flex-direction: column;
        margin-top: 10%
     }
 
     .header-container__number {
-        font-size: 0.6rem
+        display: none
     }
 
     .header-container__subtitle {
@@ -60,10 +67,6 @@
 
     .header-container__button {
         font-size: 2vw
-    }
-
-    .media {
-        margin-top: 62%
     }
 
     .media-container {
