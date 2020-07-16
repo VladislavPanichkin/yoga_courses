@@ -35,7 +35,8 @@
 
     .info__image {
         display: block;
-        width: 100%
+        width: 100%;
+        margin-top: 5%
     }
 
     .header__img {
@@ -75,12 +76,22 @@
     }
 }
 
+/* INFO */
+
+@media all and (max-width:40em) {
+    .info-icons {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
 /* GALLERY */
 
 @media all and (max-width: 80em) {
     
     h2 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .underline {
@@ -106,6 +117,67 @@
 
 /* schedule */
 
+@media all and (max-width:40em) {
+
+    .grid-container {
+        display: block;
+        position: relative
+    }
+
+    .grid-block {
+        position: relative;
+    }
+
+    .grid-item-description {
+        font-size: 0.7rem;
+    }
+
+    .grid-item {
+        margin-right: 0;
+        margin-bottom: 1%
+    }
+
+    .slick-list {
+        margin-bottom: 5%;
+    }
+
+    .slick-dots li {
+        width: 16px;
+        height: 16px;
+        left: -50%
+    }
+
+    .slick-dots li button:before {
+        color: black;
+        padding-right: 4px;
+    }
+
+    .slider-container {    }
+
+    .slick-active button:before {
+        color: transparent!important;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .slick-dots {
+        left: 50%
+    }
+
+    .grid-item-name {
+        font-size: 1rem;
+    }
+
+    .grid-more-link {
+        font-size: 0.6rem;
+    }
+
+    .grid-button {
+        height: 2rem;
+        font-size: 0.5rem;
+    }
+}
+
 @media all and (max-width: 80em) {
     .grid-container{
         grid-template-columns: 45% 45%;
@@ -122,7 +194,6 @@
     }
 
     .slide__description {
-        padding: 10vw;
         font-size: 0.9em;
         position: absolute;
         color: white

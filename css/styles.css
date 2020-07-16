@@ -260,6 +260,7 @@ h1 {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3%;
 }
 
 .slick-center .slide__image {
@@ -570,7 +571,6 @@ filter: contrast(0.6);
 
 .tutors-container {
     width: 92%;
-    height: 85vh;
     background: #f8f2e4
 }
 
@@ -594,7 +594,7 @@ filter: contrast(0.6);
 .slick-dots {
     position: absolute;
     bottom: 2%;
-    right: 1%
+    /* right: 1% */
 }
 
 .slick-dots li {
@@ -649,8 +649,8 @@ filter: contrast(0.6);
 
 /* REVIEW */
 
-.review-section {
-    margin-top: 17%
+.reviews-block {
+    position: relative
 }
 
 .review {
