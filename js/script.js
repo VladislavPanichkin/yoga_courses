@@ -45,7 +45,7 @@ $(document).ready(function () {
     });
 
     $('.reviews-block').slick({
-        arrows: false,
+        arrows: true,
         dots: true,
         touchMove: true,
         centerMode: true,
