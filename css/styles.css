@@ -743,3 +743,33 @@ filter: contrast(0.6);
   .benefit__description {
     font-size: 0.7rem;
   }
+
+  /* CONDITIONS */
+
+  .conditions__subtitle {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 5%;
+  }
+
+  .conditions-block {
+      display: flex
+  }
+
+  .conditions-item {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .conditions__text {
+    font-size: 0.7em;
+  }
+
+  .conditions__img {
+    width: 7vw;
+  }
+
+  .conditions__img, .arrow_next {
+    align-self: center;
+  }
