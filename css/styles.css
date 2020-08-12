@@ -773,3 +773,8 @@ filter: contrast(0.6);
   .conditions__img, .arrow_next {
     align-self: center;
   }
+
+  .arrow_next {
+    align-self: baseline;
+    margin-top: 6%;
+  }

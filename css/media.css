@@ -24,13 +24,15 @@
     }
 
     .container {
-        padding: 0 10%
+        padding: 0 5%
     }
 
     .info-column {
         float: none;
-        width: 100%;
-        text-align: center
+        text-align: center;
+        margin-top: 8%;
+        width: 63%;
+        margin-left: 20%;
     }
 
     .info__image {
@@ -126,6 +128,7 @@
 
     .grid-block {
         position: relative;
+        padding: 0
     }
 
     .grid-item-description {
@@ -226,5 +229,39 @@
 
     .features-block {
       display: none
+    }
+}
+
+/* benefits */
+
+@media all and (max-width:40em) {
+    .benefits-grid-container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .benefit__icon {
+        width: 20vw;
+    }
+}
+
+/* conditions */
+
+@media all and (max-width:40em) {
+    .conditions-block {
+        flex-flow: column
+    }
+
+    .conditions__img {
+        width: 20vw;
+        margin-bottom: 5%;
+    }
+
+    .conditions__text {
+        font-size: 1em;
+    }
+
+    .review__link {
+        font-size: 1em;
     }
 }
