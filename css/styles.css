@@ -722,29 +722,35 @@ filter: contrast(0.6);
     grid-template-columns: 30% 30% 30%;
     display: grid;
     justify-content: center;
+    padding-bottom: 7%;
   }
 
   .benefit {
     align-items: center;
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
   }
 
   .benefit__icon {
-    width: 9vw
+    height: 9vw;
+    margin-bottom: 5%;
   }
 
   .benefit__header {
     font-weight: 600;
-    font-size: 0.9rem;
-  }
-
-  .benefit__description {
     font-size: 0.7rem;
   }
 
+  .benefit__description {
+    font-size: 0.6rem;
+  }
+
   /* CONDITIONS */
+
+  .container_conditions {
+      padding: 0 18%;
+      text-align: center;
+  }
 
   .conditions__subtitle {
     font-style: italic;
@@ -754,7 +760,8 @@ filter: contrast(0.6);
   }
 
   .conditions-block {
-      display: flex
+      display: flex;
+      margin-bottom: 5%;
   }
 
   .conditions-item {
@@ -763,7 +770,8 @@ filter: contrast(0.6);
   }
 
   .conditions__text {
-    font-size: 0.7em;
+    font-size: 0.6em;
+    margin-bottom: 4%;
   }
 
   .conditions__img {
@@ -778,3 +786,88 @@ filter: contrast(0.6);
     align-self: baseline;
     margin-top: 6%;
   }
+
+/* PRICE */
+
+ .price-section {
+    background: #f8f2e4
+ }
+
+ .price-table {
+    margin-bottom: 5%;
+ }
+
+ .price-options {
+     margin-bottom: 5%
+ }
+
+ .price-table_white {
+    padding: 5%;
+    background: white
+ }
+
+ .price__text {
+    font-size: 0.9em;
+    font-weight: 300;
+ }
+
+ .price__text_bold {
+    font-weight: 600;
+ }
+
+ .price__text_sum {
+     float: right;
+     margin-left: 1%;
+     color: #df551f;
+ }
+
+ .price-table_red {
+    background: #f4e1b6;
+    padding: 2%;
+ }
+
+ .price__button {
+    loat: right;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    color: #e28234;
+    border: 3px solid #e28234;
+    background: transparent;
+    width: 15%;
+    height: 1.3rem;
+    transition: 0.3s;
+    margin-left: 2%;
+ }
+
+ .price-header {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+ }
+
+ .price-row {
+     display: flex;
+     align-items: center
+ }
+
+ .tick, .cross {
+    display: inline;
+    margin-right: 10%
+ }
+
+ .cross {
+    display: inline;
+    margin-right: 10%;
+ } /* DOESN'T WORK ???*/
+
+ .option {
+    font-size: 0.7rem;
+    font-weight: 300
+ }
+
+ .price__bold-text {
+    font-weight: 500;
+    font-size: 0.7rem;
+    padding-bottom: 5%;
+ }
+ 
