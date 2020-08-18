@@ -855,10 +855,10 @@ filter: contrast(0.6);
     margin-right: 10%
  }
 
- .cross {
+ img.cross {
     display: inline;
     margin-right: 10%;
- } /* DOESN'T WORK ???*/
+ }
 
  .option {
     font-size: 0.7rem;
@@ -871,3 +871,34 @@ filter: contrast(0.6);
     padding-bottom: 5%;
  }
  
+ /* GUARANTEES */
+
+ .guarantees__text {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.7rem;
+    margin-bottom: 5%;
+ }
+
+ .guarantees-documents-files {
+    display: flex;
+ }
+
+ .guarantees-documents__title {
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+    font-weight: 500;
+ }
+
+ .guarantees-documents-file {
+    margin-right: 5%;
+ }
+
+ .guarantees-documents__text {
+    font-size: 0.6rem;
+ }
+
+ .document {
+    margin: 0 auto;
+    height: 19vh;
+ }
