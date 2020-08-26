@@ -896,9 +896,16 @@ filter: contrast(0.6);
 
  .guarantees-documents__text {
     font-size: 0.6rem;
+    margin-top: 5%;
  }
 
  .document {
     margin: 0 auto;
     height: 19vh;
+ }
+
+ /* CONTACTS */
+
+ .contact-section {
+    background: #f8f2e4;
  }
