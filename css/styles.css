@@ -17,6 +17,15 @@ h2 {
     font-weight: 500
 }
 
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .container {
     padding: 0 22%;
     text-align: center
@@ -882,6 +891,7 @@ filter: contrast(0.6);
 
  .guarantees-documents-files {
     display: flex;
+    margin-bottom: 10%;
  }
 
  .guarantees-documents__title {
@@ -908,4 +918,70 @@ filter: contrast(0.6);
 
  .contact-section {
     background: #f8f2e4;
+    text-align: left;
+ }
+
+ .contacts__header {
+    margin-bottom: 5%;
+    padding-top: 10%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.1rem;
+ }
+
+ .contacts-icons {
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .contacts__icon {
+    width: 4vw;
+    margin-right: 5%;
+ }
+
+ .contacts__title {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5%;
+ }
+
+ .contacts__subtitle {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 5%;
+ }
+
+ .contacts-wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    padding-bottom: 5%;
+ }
+
+.contacts-item:nth-child(3) {
+     width: 100%
+ }
+
+ .contacts-item:nth-child(1) {
+     margin-right: 10%;
+ }
+
+ .contacts__number {
+    font-weight: 600;
+    color: black;
+    font-size: 1.5rem;
+    float: left;
+ }
+
+ .contacts-maps {
+    display: flex;
+ }
+
+ .contacts__map {
+    margin-right: 5%;
+ }
+
+ .map__title {
+    font-weight: 600;
+    font-size: 0.6rem;
  }
