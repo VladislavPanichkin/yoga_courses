@@ -1,4 +1,5 @@
 @import '../fonts/stylesheet.css';
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 html { font-size: calc(1em + 1vw) }
 
@@ -24,6 +25,15 @@ a {
 a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.social a {
+    width: 5vw;
+    height: 5vw;
+    float: left;
+    padding: 24%;
+    color: #fd8329;
+    border-radius: 50%;
 }
 
 .container {
@@ -979,6 +989,20 @@ filter: contrast(0.6);
 
  .contacts__map {
     margin-right: 5%;
+ }
+
+.contacts-link-container {
+    border: 1px solid #fd8329;
+}
+
+ .contacts__link {
+    font-size: 2.2vw;
+ }
+
+ .contacts-link-container:hover {
+     background: #fd8329;
+     border: 1px solid#fd8329;
+     color: white
  }
 
  .map__title {
