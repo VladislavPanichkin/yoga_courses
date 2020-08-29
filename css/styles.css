@@ -1009,3 +1009,44 @@ filter: contrast(0.6);
     font-weight: 600;
     font-size: 0.6rem;
  }
+
+ /* FOOTER */
+
+ footer {
+    background: #383838;
+    padding: 1% 0;
+    color: white;
+ }
+
+ .footer-container {
+    display: flex;
+    text-align: left;
+    align-items: center;
+ }
+
+ .footer__img {
+    align-self: baseline;
+    margin-right: 5%;
+ }
+
+ .footer__info {
+    font-size: 0.5rem;
+ }
+
+ .footer__link {
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: underline;
+ }
+
+ .footer__link:hover {
+     color: #fd8329
+ }
+
+ .legal__title {
+    font-size: 0.55rem;
+ }
+
+ .legal__info {
+    font-size: 0.47rem;
+ }
