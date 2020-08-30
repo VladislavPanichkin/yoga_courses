@@ -10,7 +10,7 @@ body{
 
 header {
     background: url('../img/background-header.png') no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: white
 }
 
@@ -25,15 +25,6 @@ a {
 a:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-
-.social a {
-    width: 5vw;
-    height: 5vw;
-    float: left;
-    padding: 24%;
-    color: #fd8329;
-    border-radius: 50%;
 }
 
 .container {
@@ -93,12 +84,14 @@ a:hover {
     color: white;
     padding: 2% 8%;
     border: 1px solid white;
-    transition: 0.2s
+    transition: 0.2s;
+    position: relative;
 }
 
 .header-container__button:hover {
     background-color: #db883c;
     border: 1px solid #db883c;
+    text-decoration: none
 }
 .header-info {
     text-align: right;
@@ -122,45 +115,36 @@ h1 {
     margin-top: 10%;
     padding-bottom: 5%;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-self: flex-end;
 }
 
 .media-container {
-    width: 1em;
-    height: 1em;
-	border-radius: 100%;
-    position: relative;
+    margin-right: 1%
+}
+
+.media-link-container {
     border: 1px solid white;
-    margin-right: 1%;
-    transition: 0.3s
-}
-
-.media-container:hover {
-    background: #db883c;
-    border: 1px solid #db883c
-}
-
-.media__button {
-    font-size: 11px;
-    background: transparent;
+    width: 2vw;
+    height: 2vw;
+    float: left;
     border-radius: 50%;
-    border: 1px solid white;
-    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.media-container__element {
-    position: absolute;
-    left: 50%;
-	top: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 70%;
-}
+ .media__link {
+    font-size: 0.88vw;
+    color: white;
+ }
 
-.media-container__link {
-    display: block;
-    cursor: pointer;
-}
+ .media-link-container:hover {
+     background: #fd8329;
+     border: 1px solid#fd8329;
+     color: white;
+     text-decoration: none
+ }
 
 /* INFO */
 
@@ -993,10 +977,16 @@ filter: contrast(0.6);
 
 .contacts-link-container {
     border: 1px solid #fd8329;
+    width: 5vw;
+    height: 5vw;
+    float: left;
+    padding: 24%;
+    border-radius: 50%;
 }
 
  .contacts__link {
     font-size: 2.2vw;
+    color: #fd8329;
  }
 
  .contacts-link-container:hover {
