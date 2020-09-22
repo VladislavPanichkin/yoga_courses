@@ -21,17 +21,6 @@ $(document).ready(function () {
         });
     }
 
-    $('.grid-gallery').slick({
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: 480,
-                settings: "unslick",
-                arrows: false,
-                slidestToShow: 1
-            }
-        ]
-    });
 
     let el = $("div.tutor-block, .slick-active");
 
@@ -41,7 +30,16 @@ $(document).ready(function () {
         touchMove: true,
         centerMode: true,
         variableWidth: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                  }
+            }
+        ]
     });
 
     $('.reviews-block').slick({
@@ -50,7 +48,13 @@ $(document).ready(function () {
         touchMove: true,
         centerMode: true,
         variableWidth: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        responsive: [
+            {
+                breakpoint: 400,
+                settings: "unslick"
+            }
+        ]
     })
 
 });

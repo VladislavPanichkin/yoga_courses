@@ -1,5 +1,5 @@
 /* HEADER */
-@media all and (max-width: 80em) {
+@media all and (max-width: 60em) {
     h1 {
         font-size: 6vw;
     }
@@ -16,6 +16,10 @@
 }
 
 @media all and (max-width:40em) {
+
+    body {
+        line-height: 1.5;
+    }
     
     header {
         background: #f4e1b6;
@@ -29,11 +33,18 @@
     }
 
     .info-column {
-        float: none;
         text-align: center;
-        margin-top: 8%;
-        width: 63%;
-        margin-left: 20%;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .info__title_sm {
+       font-size: 1.5em;
+    }
+
+    .info__subtitle {
+        letter-spacing: 0.2em;
+        font-size: 0.8em;
     }
 
     .info__image {
@@ -91,6 +102,10 @@
     .media__link {
         font-size: 5.28vw;
     }
+
+    .text-block__element {
+        font-size: 1.5em;
+    }
 }
 
 /* INFO */
@@ -105,14 +120,14 @@
 
 /* GALLERY */
 
-@media all and (max-width: 80em) {
+@media all and (max-width: 60em) {
     
     h2 {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     .underline {
-        /* width: 50% */
+        width: 50%
     }
 
     .gallery-row {
@@ -152,7 +167,8 @@
 
     .grid-item {
         margin-right: 0;
-        margin-bottom: 1%
+        margin-bottom: 1%;
+        border: 14px solid white;
     }
 
     .slick-list {
@@ -196,7 +212,7 @@
     }
 }
 
-@media all and (max-width: 80em) {
+@media all and (max-width: 60em) {
     .grid-container{
         grid-template-columns: 45% 45%;
     }
@@ -204,11 +220,11 @@
 
 /* slider */
 
-@media all and (max-width: 80em) {
+@media all and (max-width: 60em) {
 
     .slide__image{
         position: relative;
-        width: 35%
+        width: 40%;
     }
 
     .slide__description {
@@ -222,13 +238,30 @@
     }
 }
 
+/* course */
+
+@media all and (max-width:40em) {
+    
+    .course {
+        padding: 0;
+        margin: 10% 0;
+    }
+
+    .course__title {
+        font-size: 1em;
+        font-weight: 600;
+    }
+}
+
+
 /* center container */
 
-@media all and (max-width: 80em) {
+@media all and (max-width: 60em) {
 
     .center-container {
         display: flex;
-        flex-flow: column
+        flex-flow: column;
+        align-items: center;
     }
 
     /*.center-container::before {
@@ -247,9 +280,66 @@
     }
 }
 
+/* tutors */
+
+@media all and (max-width:80em) {
+
+    .tutor-description {
+        position: inherit;
+        flex-direction: column;
+        text-align: center;
+        background: white;
+        color: black;
+    }
+}
+
+@media all and (max-width:40em) {
+
+    .tutors-container{
+       padding: 0;
+    }
+
+   .tutor-block {
+       position: inherit;
+   }
+
+   .tutor__img {
+        padding-left: 15vw;
+   }
+
+   .tutor-description {
+       position: inherit;
+       flex-direction: column;
+       text-align: center;
+       background: transparent;
+       color: black;
+   }
+
+   .tutor__info {
+       text-align: center;
+       width: 80vw;
+       font-size: 0.7em;
+       line-height: 1.4;
+   }
+
+   .tutor__name {
+    font-size: 1.2em;
+   }
+
+   .tutor__specialization {
+    font-size: 1em;
+   }
+}
+
+
 /* benefits */
 
 @media all and (max-width:40em) {
+
+    .benefit {
+        margin-bottom: 5%;
+    }
+
     .benefits-grid-container {
         display: flex;
         flex-flow: column;
@@ -257,6 +347,21 @@
 
     .benefit__icon {
         width: 20vw;
+        height: auto;
+    }
+
+    .benefit__header {
+        font-size: 1rem;
+    }
+
+    .benefit__description {
+        font-size: 0.7rem;
+    }
+
+    .arrow_next {
+        transform: rotate(90deg);
+        align-self: center;    
+        margin-bottom: 10%;
     }
 }
 
@@ -275,9 +380,30 @@
     .conditions__text {
         font-size: 1em;
     }
+}
+
+/* review */
+
+@media all and (max-width:40em) {
+
+    .reviews-block {
+        flex-direction: column;
+    }
+
+    .review {
+        border: 1px solid transparent;
+        background: #f8f2e4;
+        border-radius: 5%;
+        margin-bottom: 5%;
+        padding: 5% 0;
+    }
 
     .review__link {
         font-size: 1em;
+    }
+
+    .review__content {
+        font-weight: 500;
     }
 }
 
@@ -292,3 +418,71 @@
         margin-bottom: 5%;
     }
 }
+
+/* price */
+
+@media all and (max-width:40em) {
+
+    .price-row {
+        flex-direction: column;
+        margin: 5% 0;
+    }
+
+    .price__button {
+        padding: 1% 0px;
+        width: 40vw;
+        margin: 5% 0;
+    }
+
+    .tick, .cross {
+        margin: 0 0 3% 0;
+    }
+}
+
+/* guarantees */
+
+@media all and (max-width:40em) {
+
+    .guarantees-documents__title {
+        margin: 0;
+    }
+
+    .guarantees-documents-files {
+        flex-direction: column;
+    }
+
+    .document {
+        margin: 5% auto 0 auto;
+    }
+}
+
+/* contacts */
+
+@media all and (max-width:40em) {
+
+    .contacts-link-container {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .contacts__link {
+        font-size: 7vw;
+    }
+
+    .contacts__header {
+        text-align: center;
+    }
+
+    .contacts-item {
+        margin: 0 auto 5% auto!important;
+    }
+
+    .contacts__title {
+        text-align: center;
+    }
+
+    .contacts__number {
+        float: none;
+    }
+}
+
